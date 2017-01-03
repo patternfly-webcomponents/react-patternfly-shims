@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 /**
  * React <b>Tabs</b> Component for Patternfly Web Components
  *
- * @requires pf-tabs web component:
+ * @requires <b>pf-tabs</b> web component:
  * https://github.com/patternfly-webcomponents/patternfly-webcomponents/tree/master/src/pf-tabs
  *
  * @example {@lang xml}
