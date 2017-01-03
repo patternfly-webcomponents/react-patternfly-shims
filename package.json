@@ -1,0 +1,15 @@
+{
+  "name": "react-patternfly-shims",
+  "version": "0.0.1",
+  "description": "React Shims for PatternFly Web Components",
+  "scripts": {
+  },
+  "main": "",
+  "author": "Red Hat",
+  "license": "Apache-2.0",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "patternfly-webcomponents": "git+https://github.com/patternfly-webcomponents/patternfly-webcomponents.git#development"
+  }
+}
