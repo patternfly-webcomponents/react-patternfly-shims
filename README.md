@@ -4,9 +4,8 @@ This project provides React extensions (shims) for the core Patternfly web compo
 ![Image of PatternFly](https://raw.githubusercontent.com/patternfly-webcomponents/react-patternfly-shims/master/icons/patternfly-orb.png)
 ![Image of WebComponents](https://raw.githubusercontent.com/patternfly-webcomponents/react-patternfly-shims/master/icons/wc.png)
 ![Image of React](https://raw.githubusercontent.com/patternfly-webcomponents/react-patternfly-shims/master/icons/react.png)
----
 
-## Usage
+### Usage
 ```
 $ npm install --save react-patternfly-shims
 ```
