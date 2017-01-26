@@ -36,7 +36,7 @@ class Tabs extends React.Component {
       <pf-tabs key="pf-tabs" ref="pfTabs">
         {this.props.children}
       </pf-tabs>
-  )
+    )
   }
 }
 
