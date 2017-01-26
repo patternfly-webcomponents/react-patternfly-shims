@@ -4,7 +4,7 @@
   "description": "React Shims for PatternFly Web Components",
   "scripts": {
   },
-  "main": "",
+  "main": "src/index.js",
   "author": "Red Hat",
   "license": "Apache-2.0",
   "devDependencies": {
