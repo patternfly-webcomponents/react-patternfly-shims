@@ -1,5 +1,5 @@
 import React, { PropTypes } from "react";
-import PfTabs from "patternfly-webcomponents";
+import { PfTabs } from "patternfly-webcomponents";
 /**
  * React <b>Tabs</b> Component for Patternfly Web Components
  *
