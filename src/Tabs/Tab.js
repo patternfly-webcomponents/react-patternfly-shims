@@ -1,5 +1,4 @@
-import React, { PropTypes } from 'react';
-
+import React, { PropTypes } from "react";
 /**
  * React <b>Tab</b> Component for Patternfly Web Components
  *
@@ -18,7 +17,6 @@ import React, { PropTypes } from 'react';
  *
  */
 class Tab extends React.Component {
-
   static propTypes = {
     tabTitle: React.PropTypes.string,
     active: React.PropTypes.bool
@@ -32,18 +30,23 @@ class Tab extends React.Component {
     this.setActive();
   }
 
-  setActive(){
-    if(this.props.active){
+  setActive() {
+    if (this.props.active) {
       this.refs.pfTab.parentElement.setActiveTab(this.props.tabTitle || "");
     }
   }
 
   render() {
     return (
-      <pf-tab tabTitle={this.props.tabTitle || ""} active={this.props.active || false} key="tab" ref="pfTab">
+      <pf-tab
+        tabTitle={this.props.tabTitle || ""}
+        active={this.props.active || false}
+        key="tab"
+        ref="pfTab"
+      >
         {this.props.children}
       </pf-tab>
-    )
+    );
   }
 }
 
