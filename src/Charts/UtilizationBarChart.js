@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React, { PropTypes } from "react";
+import PfUtilizationBarChart from "patternfly-webcomponents";
 
 /**
  * React <b>UtilizationBarChart</b> Component for Patternfly Web Components
@@ -30,7 +31,6 @@ import React, { PropTypes } from 'react';
  *
  */
 class UtilizationBarChart extends React.Component {
-
   static propTypes = {
     chartTitle: React.PropTypes.string,
     layout: React.PropTypes.string,
@@ -42,9 +42,9 @@ class UtilizationBarChart extends React.Component {
     onThresholdSet: React.PropTypes.func
   };
 
-componentDidUpdate() {
-    this.refs.pfUtilizationBarChar.addEventListener('onThresholdSet', (e) =>{
-      if(this.props.onThresholdSet){
+  componentDidUpdate() {
+    this.refs.pfUtilizationBarChar.addEventListener("onThresholdSet", e => {
+      if (this.props.onThresholdSet) {
         this.props.onThresholdSet(e);
       }
     });
@@ -52,7 +52,8 @@ componentDidUpdate() {
 
   render() {
     return (
-      <pf-utilization-bar-chart key="pf-utilization-bar-chart" 
+      <pf-utilization-bar-chart
+        key="pf-utilization-bar-chart"
         chart-title={this.props.chartTitle}
         layout={this.props.layout}
         used={this.props.used}
@@ -60,9 +61,9 @@ componentDidUpdate() {
         units={this.props.units}
         threshold-warning={this.props.thresholdWarning}
         threshold-error={this.props.thresholdError}
-        ref="pfUtilizationBarChar">
-      </pf-utilization-bar-chart>
-    )
+        ref="pfUtilizationBarChar"
+      />
+    );
   }
 }
 

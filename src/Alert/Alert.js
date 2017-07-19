@@ -1,5 +1,5 @@
-import React, { PropTypes } from 'react';
-
+import React, { PropTypes } from "react";
+import PfAlert from "patternfly-webcomponents";
 /**
  * React <b>Alert</b> Component for Patternfly Web Components
  *
@@ -17,7 +17,6 @@ import React, { PropTypes } from 'react';
  *
  */
 class Alert extends React.Component {
-
   static propTypes = {
     type: React.PropTypes.string,
     persistent: React.PropTypes.bool
@@ -25,12 +24,10 @@ class Alert extends React.Component {
 
   render() {
     return (
-      <pf-alert 
-            type={this.props.type}
-            persistent={this.props.persistent}>
+      <pf-alert type={this.props.type} persistent={this.props.persistent}>
         {this.props.children}
       </pf-alert>
-    )
+    );
   }
 }
 

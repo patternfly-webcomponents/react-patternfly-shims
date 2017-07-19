@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React, { PropTypes } from "react";
+import PfTooltip from "patternfly-webcomponents";
 
 /**
  * React <b>Tooltip</b> Component for Patternfly Web Components
@@ -21,7 +22,6 @@ import React, { PropTypes } from 'react';
  *
  */
 class Tooltip extends React.Component {
-
   static propTypes = {
     animation: React.PropTypes.string,
     targetSelector: React.PropTypes.string,
@@ -35,27 +35,29 @@ class Tooltip extends React.Component {
     this.handleContentChanged();
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.handleContentChanged();
   }
 
-  handleContentChanged(){
-    var event = new CustomEvent('handleContentChanged',{});
+  handleContentChanged() {
+    var event = new CustomEvent("handleContentChanged", {});
     this.refs.pfTooltip.dispatchEvent(event);
   }
 
   render() {
     return (
-      <pf-tooltip ref="pfTooltip"
-                  animation={this.props.animation}
-                  targetSelector={this.props.targetSelector}
-                  placement={this.props.placement}
-                  delay={this.props.delay}
-                  duration={this.props.duration}
-                  containerSelector={this.props.containerSelector}>
+      <pf-tooltip
+        ref="pfTooltip"
+        animation={this.props.animation}
+        targetSelector={this.props.targetSelector}
+        placement={this.props.placement}
+        delay={this.props.delay}
+        duration={this.props.duration}
+        containerSelector={this.props.containerSelector}
+      >
         {this.props.children}
       </pf-tooltip>
-    )
+    );
   }
 }
 
