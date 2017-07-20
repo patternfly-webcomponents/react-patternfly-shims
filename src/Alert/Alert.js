@@ -1,5 +1,5 @@
 import React, { PropTypes } from "react";
-import PfAlert from "patternfly-webcomponents";
+import { PfAlert } from "patternfly-webcomponents";
 /**
  * React <b>Alert</b> Component for Patternfly Web Components
  *

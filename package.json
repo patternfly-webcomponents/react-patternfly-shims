@@ -1,6 +1,6 @@
 {
   "name": "react-patternfly-shims",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React Shims for PatternFly Web Components",
   "scripts": {},
   "main": "lib/index.js",
@@ -17,6 +17,6 @@
     "gulp-plumber": "^1.1.0"
   },
   "dependencies": {
-    "patternfly-webcomponents": "0.0.8"
+    "patternfly-webcomponents": "0.0.9"
   }
 }

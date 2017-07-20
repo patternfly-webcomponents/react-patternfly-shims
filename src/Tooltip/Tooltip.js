@@ -1,5 +1,5 @@
 import React, { PropTypes } from "react";
-import PfTooltip from "patternfly-webcomponents";
+import { PfTooltip } from "patternfly-webcomponents";
 
 /**
  * React <b>Tooltip</b> Component for Patternfly Web Components

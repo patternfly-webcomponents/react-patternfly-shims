@@ -1,5 +1,5 @@
 import React, { PropTypes } from "react";
-import PfUtilizationBarChart from "patternfly-webcomponents";
+import { PfUtilizationBarChart } from "patternfly-webcomponents";
 
 /**
  * React <b>UtilizationBarChart</b> Component for Patternfly Web Components
